@@ -1,0 +1,61 @@
+/* Selektor ID*/
+
+#artikel-1 {
+    background: linear-gradient(70deg, rgb(0, 250, 254) 10%, rgb(47, 8, 146)90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#artikel-2{
+    background: linear-gradient(90deg, rgba(255, 2, 2, 0.695) 0%, rgb(155, 3, 3)70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Selektor Class*/
+
+.penulis{
+    background: linear-gradient(to top, rgb(246, 0, 254) 0%, rgb(129, 9, 137)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.tanggal{
+    background: linear-gradient(to left, rgb(80, 254, 0) 0%, rgb(43, 124, 6)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Selektor Tag */
+
+span{
+   
+    background: linear-gradient(to left, rgb(254, 0, 0) 0%, rgb(255, 116, 2)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+h3+p{
+    background: linear-gradient(to bottom, rgb(0, 246, 254) 0%, rgb(15, 142, 173)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+/* Selektor Universal*/
+
+* { 
+   font-family: 'tahoma';
+}
+
+h1 {
+    background: linear-gradient(to top, rgba(93, 254, 0, 0.766) 0%, rgb(2, 87, 36)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

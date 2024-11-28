@@ -1,0 +1,13 @@
+#ahyan-kinza{
+    width: 300px;
+    height: 350px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    padding-left: 10px;
+    align-items: center;
+
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="tugaspopup.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return showDialog()">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Apakah Anda ingin login?</p>
+            <button class="daus" onclick="confirmLogin()">Ya</button>
+            <button onclick="closeDialog()">Tidak</button>
+        </div>
+    </div>
+
+    <script>
+         document.getElementById('username').addEventListener('input', toggleButton);
+        document.getElementById('password').addEventListener('input', toggleButton);
+
+        function toggleButton() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            document.getElementById('loginButton').disabled = !(username && password);
+        }
+
+        function showDialog() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                document.getElementById('popup').style.display = 'flex';
+                return false; 
+            }
+            return true; 
+        }
+
+        function confirmLogin() {
+            var jwb = prompt(" Jawab pertanyaan terlebih dahulu: Apakah skapeng punya eskul basket? (Jawab dengan 'IYA' atau 'TIDAK')");
+            if (jwb && jwb.toUpperCase() === "TIDAK") {
+                fff
+                window.location.href = 'index_baru.html'; 
+            } else {
+                alert('Jawaban salah. Silakan coba lagi.');
+
+
+            }
+        }
+
+        function closeDialog() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
